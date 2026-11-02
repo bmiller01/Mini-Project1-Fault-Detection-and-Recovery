@@ -1,6 +1,6 @@
 import socket
 import time
-#nothinmg crazy for client should just need to show before andd after but feel free toe dit however yall see fit
+
 client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 client.settimeout(2)
 
