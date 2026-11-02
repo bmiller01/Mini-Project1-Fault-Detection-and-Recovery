@@ -14,7 +14,7 @@ client.settimeout(0.5)
 
 print("Waiting for the primary service to crash...")
 
-#need service running befoire crash, It took me way to long to relaize that mistake lol
+#need service running befoire crash
 while True:
     try:
         client.sendto(b"STATUS", (server_ip, server_port))
@@ -26,7 +26,7 @@ while True:
         print("Waiting for primary...")
     time.sleep(1)
 
-#whenever it stiop repsonding, damage the saved checkpoint.
+#whenever it stiop responding, damage the saved checkpoint.
 while True:
     try:
         client.sendto(b"STATUS", (server_ip, server_port))
